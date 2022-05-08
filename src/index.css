@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    zoom: 96%;
+}
+
+body {
+    background: lightblue;
+    color: black;
+    font-family: "Libre+Franklin", monospace;
+    font-weight: 300;
+}
+
