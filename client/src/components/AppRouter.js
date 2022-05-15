@@ -1,7 +1,6 @@
 import React from 'react';
-import {Routes, Route} from "react-router-dom";
-import {authRoutes} from '../routes'
-import {publicRoutes} from '../routes'
+import {Routes, Route} from 'react-router-dom';
+import {authRoutes, publicRoutes} from '../routes'
 
 const AppRouter = () => {
     const isAuth = false
@@ -9,10 +8,10 @@ const AppRouter = () => {
     return (
         <Routes>
             {isAuth && authRoutes.map(({path, Component}) =>
-                <Route key={path} path={path} element={Component} exact/>
+                <Route exact key={path} path={path} element={Component}/>
             )}
             {publicRoutes.map(({path, Component}) =>
-                <Route key={path} path={path} element={Component} exact/>
+                <Route exact key={path} path={path} element={Component}/>
             )}
         </Routes>
     );
