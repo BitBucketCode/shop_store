@@ -1,3 +1,4 @@
+import React from 'react'
 import Admin from './pages/Admin'
 import Shop from './pages/Shop'
 import Auth from './pages/Auth'

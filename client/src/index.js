@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import UserStore from "./store/UserStore";
 import ProductStore from "./store/ProductStore";
+import Home from "./pages/Home/Home";
 
 export const Context = createContext(null)
 
@@ -13,7 +14,8 @@ root.render(
             user: new UserStore(),
             product: new ProductStore(),
         }}>
-            <App/>
+{/*            <App />*/}
+            <Home />
         </Context.Provider>
     </React.StrictMode>
 );
