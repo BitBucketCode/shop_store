@@ -2,27 +2,32 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   height: 80px;
+  font-family: 'Koulen', cursive;
 `
 export const Wrapper = styled.div`
   padding: 10px 30px;
   display: flex;
   align-items: center;
-  justify-content: space-between;  
+  justify-content: space-between;
+  font-family: 'Koulen', cursive;
 `
 export const LeftElem = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
+  font-family: 'Koulen', cursive;
 `
 export const CenterElem = styled.div`
   flex: 1;
   text-align: center;
+  font-family: 'Koulen', cursive;
 `
 export const RightElem = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  font-family: 'Koulen', cursive;
 `
 export const Language = styled.span`
   font-size: 16px;
