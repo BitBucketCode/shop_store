@@ -4,6 +4,8 @@ import App from './App';
 import UserStore from "./store/UserStore";
 import ProductStore from "./store/ProductStore";
 import Home from "./pages/Home/Home";
+import Cart from "./pages/Cart/Cart";
+import Product from "./pages/Product/Product";
 
 export const Context = createContext(null)
 
@@ -15,7 +17,10 @@ root.render(
             product: new ProductStore(),
         }}>
 {/*            <App />*/}
-            <Home />
+{/*            <Home />*/}
+{/*            <Cart/>*/}
+            <Product/>
+
         </Context.Provider>
     </React.StrictMode>
 );

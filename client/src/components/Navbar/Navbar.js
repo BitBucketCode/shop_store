@@ -1,7 +1,6 @@
 import {
     CenterElem,
     Container,
-    Language,
     LeftElem,
     RightElem,
     SearchContainer,
@@ -10,31 +9,30 @@ import {
 } from "./Navbar.elements";
 import {Search, ShoppingCartOutlined} from "@mui/icons-material";
 import Badge from '@mui/material/Badge';
+import RegIcon from '@mui/icons-material/HowToReg';
+import SignIn from '@mui/icons-material/ExitToApp';
+import {SHOP_NAME} from "../../data";
+import Animations from "./Animations";
+import s from './ElementStyles.module.css'
 
 const Navbar = () => {
     return (
         <Container>
             <Wrapper>
                 <LeftElem>
-                    <Language>EN</Language>
-                    <SearchContainer>
-                        <Input/>
-                        <Search style={{color: 'gray', fontSize: 16}}/>
-                    </SearchContainer>
+                    <Animations/>
                 </LeftElem>
                 <CenterElem>
-                    <Logo>
-                        EUGENE-SHOP
-                    </Logo>
+                    <Logo>{SHOP_NAME}</Logo>
                 </CenterElem>
                 <RightElem>
-                    <MenuItem>REGISTER</MenuItem>
-                    <MenuItem>SIGN IN</MenuItem>
-                    <MenuItem>
-                        <Badge badgeContent={2} color="primary">
-                            <ShoppingCartOutlined/>
-                        </Badge>
-                    </MenuItem>
+                    <SearchContainer>
+                        <Input/>
+                        <Search className={s.SearchStyle}/>
+                    </SearchContainer>
+                    <MenuItem><RegIcon/></MenuItem>
+                    <MenuItem><SignIn/></MenuItem>
+                    <MenuItem><Badge className={s.BadgeStyle}><ShoppingCartOutlined/></Badge></MenuItem>
                 </RightElem>
             </Wrapper>
         </Container>

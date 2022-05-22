@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  height: 80px;
+  height: 100px;
   font-family: 'Koulen', cursive;
+  background-color: lightblue;
 `
 export const Wrapper = styled.div`
-  padding: 10px 30px;
+  padding: 5px 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -14,8 +15,11 @@ export const Wrapper = styled.div`
 export const LeftElem = styled.div`
   flex: 1;
   display: flex;
-  align-items: center;
   font-family: 'Koulen', cursive;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 25px;
+  align-items: center;
 `
 export const CenterElem = styled.div`
   flex: 1;
@@ -29,12 +33,7 @@ export const RightElem = styled.div`
   justify-content: flex-end;
   font-family: 'Koulen', cursive;
 `
-export const Language = styled.span`
-  font-size: 16px;
-  cursor: pointer;
-`
 export const SearchContainer = styled.div`
-  border: 0.5px solid lightblue;
   display: flex;
   align-items: center;
   margin-left: 25px;  
@@ -43,7 +42,6 @@ export const SearchContainer = styled.div`
 export const Input = styled.input`
   border: none;
 `
-
 export const Logo = styled.h1`
   font-weight: bold;
 `
