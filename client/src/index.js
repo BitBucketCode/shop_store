@@ -6,6 +6,10 @@ import ProductStore from "./store/ProductStore";
 import Home from "./pages/Home/Home";
 import Cart from "./pages/Cart/Cart";
 import Product from "./pages/Product/Product";
+import Login from "./pages/Login/Login";
+import Register from "./pages/Register/Register";
+import ProductList from "./pages/ProductList/ProductList";
+
 
 export const Context = createContext(null)
 
@@ -19,7 +23,10 @@ root.render(
 {/*            <App />*/}
 {/*            <Home />*/}
 {/*            <Cart/>*/}
-            <Product/>
+{/*            <Product/>*/}
+{/*            <Login/>*/}
+{/*            <Register/>*/}
+            <ProductList/>
 
         </Context.Provider>
     </React.StrictMode>
