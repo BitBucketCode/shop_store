@@ -7,7 +7,6 @@ import {
     Top,
     TopButton,
     TopTexts,
-    TopText,
     Bottom,
     Info,
     Product,
