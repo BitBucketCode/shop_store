@@ -1,3 +1,4 @@
+import React from "react"
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import RemoveCircleOutlineIcon from '@mui/icons-material/RemoveCircleOutline';
 import Footer from "../../components/Footer/Footer";
@@ -22,7 +23,7 @@ import {
     Amount,
     AmountContainer,
     Button,
-} from "../Product/Product.elements"
+} from "./Product.elements"
 
 const Product = () => {
     return (

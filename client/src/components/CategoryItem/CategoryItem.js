@@ -1,3 +1,4 @@
+import React from "react"
 import {Container, Image, Info, Title, Button} from "./CategoryItem.elements";
 
 const CategoryItem = ({ item }) => {

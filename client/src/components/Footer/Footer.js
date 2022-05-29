@@ -1,76 +1,88 @@
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
-import PinterestIcon from '@mui/icons-material/Pinterest';
-import MeetingRoomIcon from '@mui/icons-material/MeetingRoom';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import {
-    Container,
-    Left,
-    Logo,
-    Desc,
-    SocialContainer,
-    SocialIcon,
-    Title,
-    Center,
-    List,
-    ListItem,
-    Right,
-    ContactItem,
-    Payment
-} from "./Footer.elements"
-import {SHOP_NAME} from "../../data";
-import paymentMethods from "../../sources/Images/paymentMethods.png"
+import * as React from 'react';
+import Box from '@mui/material/Box'
+import Container from '@mui/material/Container'
+import Typography from '@mui/material/Typography'
+import Grid from '@mui/material/Grid'
+import Stack from '@mui/material/Stack'
 
 const Footer = () => {
     return (
-        <Container>
-            <Left>
-                <Logo>{SHOP_NAME}</Logo>
-                <Desc>
-                    HOME TO THE BEST INDEPENDENT BRANDS AND VINTAGE BOUTIQUES.
-                </Desc>
-                <SocialContainer>
-                    <SocialIcon color="3B5999">
-                        <FacebookIcon />
-                    </SocialIcon>
-                    <SocialIcon color="E4405F">
-                        <InstagramIcon />
-                    </SocialIcon>
-                    <SocialIcon color="55ACEE">
-                        <TwitterIcon />
-                    </SocialIcon>
-                    <SocialIcon color="E60023">
-                        <PinterestIcon />
-                    </SocialIcon>
-                </SocialContainer>
-            </Left>
-            <Center>
-                <Title>Useful Links</Title>
-                <List>
-                    <ListItem>Home</ListItem>
-                    <ListItem>Cart</ListItem>
-                    <ListItem>Man Fashion</ListItem>
-                    <ListItem>Woman Fashion</ListItem>
-                    <ListItem>My Account</ListItem>
-                </List>
-            </Center>
-            <Right>
-                <Title>Contact</Title>
-                <ContactItem>
-                    <MeetingRoomIcon style={{marginRight:"10px"}}/> 100 Columbiana Cir, Columbia, SC 29212, United States
-                </ContactItem>
-                <ContactItem>
-                    <LocalPhoneIcon style={{marginRight:"10px"}}/> +1 803-781-1000
-                </ContactItem>
-                <ContactItem>
-                    <MailOutlineIcon style={{marginRight:"10px"}} /> columbiana@gmail.com
-                </ContactItem>
-                <Payment src={paymentMethods} />
-            </Right>
-        </Container>
-    );
-};
+        <Box sx={{ bgcolor: 'common.black', color: 'grey.700' }}>
 
-export default Footer;
+            <Container maxWidth="md" sx={{ py: 6 }}>
+                <Stack spacing={4}>
+                    <Box>
+                        <Grid container spacing={4}>
+                            <Grid item xs={6} md={3}>
+                                <Stack spacing={2}>
+                                    <Typography variant="caption" component="a" href="#">
+                                        FAQ
+                                    </Typography>
+                                    <Typography variant="caption" component="a" href="#">
+                                        Investor Relations
+                                    </Typography>
+                                    <Typography variant="caption" component="a" href="#">
+                                        Privacy
+                                    </Typography>
+                                    <Typography variant="caption" component="a" href="#">
+                                        Speed Test
+                                    </Typography>
+                                </Stack>
+                            </Grid>
+                            <Grid item xs={6} md={3}>
+                                <Stack spacing={2}>
+                                    <Typography variant="caption" component="a" href="#">
+                                        Help Center
+                                    </Typography>
+                                    <Typography variant="caption" component="a" href="#">
+                                        Jobs
+                                    </Typography>
+                                    <Typography variant="caption" component="a" href="#">
+                                        Cookie Preferences
+                                    </Typography>
+                                    <Typography variant="caption" component="a" href="#">
+                                        Legal Notices
+                                    </Typography>
+                                </Stack>
+                            </Grid>
+                            <Grid item xs={6} md={3}>
+                                <Stack spacing={2}>
+                                    <Typography variant="caption" component="a" href="#">
+                                        Account
+                                    </Typography>
+                                    <Typography variant="caption" component="a" href="#">
+                                        Ways to Watch
+                                    </Typography>
+                                    <Typography variant="caption" component="a" href="#">
+                                        Corporate Information
+                                    </Typography>
+                                    <Typography variant="caption" component="a" href="#">
+                                        Only on Netflix
+                                    </Typography>
+                                </Stack>
+                            </Grid>
+                            <Grid item xs={6} md={3}>
+                                <Stack spacing={2}>
+                                    <Typography variant="caption" component="a" href="#">
+                                        Media Center
+                                    </Typography>
+                                    <Typography variant="caption" component="a" href="#">
+                                        Terms of Use
+                                    </Typography>
+                                    <Typography variant="caption" component="a" href="#">
+                                        Contact Us
+                                    </Typography>
+                                </Stack>
+                            </Grid>
+
+                        </Grid>
+                    </Box>
+
+                </Stack>
+            </Container>
+
+        </Box>
+    );
+}
+
+export default Footer

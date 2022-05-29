@@ -13,6 +13,7 @@ import RegIcon from '@mui/icons-material/HowToReg';
 import SignIn from '@mui/icons-material/ExitToApp';
 import {SHOP_NAME} from "../../data";
 import Animations from "./Animations";
+import React from "react"
 import s from './ElementStyles.module.css'
 
 const Navbar = () => {

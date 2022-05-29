@@ -1,3 +1,4 @@
+import React from "react"
 import {Container} from "./Categories.elements";
 import { categories } from "../../data";
 import CategoryItem from "../CategoryItem/CategoryItem";
